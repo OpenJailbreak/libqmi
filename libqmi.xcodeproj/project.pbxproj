@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A3FB654178B29310002854B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB653178B29310002854B /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A3FB647178B29310002854B /* libqmi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libqmi; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3FB64C178B29310002854B /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		8A3FB64D178B29310002854B /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		8A3FB64F178B29310002854B /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		8A3FB652178B29310002854B /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		8A3FB653178B29310002854B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A3FB644178B29310002854B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A3FB63E178B29310002854B = {
+			isa = PBXGroup;
+			children = (
+				8A3FB649178B29310002854B /* libqmi */,
+				8A3FB648178B29310002854B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A3FB648178B29310002854B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB647178B29310002854B /* libqmi */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A3FB649178B29310002854B /* libqmi */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB653178B29310002854B /* main.c */,
+				8A3FB64A178B29310002854B /* Package */,
+				8A3FB64E178B29310002854B /* Supporting Files */,
+			);
+			path = libqmi;
+			sourceTree = "<group>";
+		};
+		8A3FB64A178B29310002854B /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB64B178B29310002854B /* DEBIAN */,
+				8A3FB650178B29310002854B /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		8A3FB64B178B29310002854B /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB64C178B29310002854B /* control.txt */,
+				8A3FB64D178B29310002854B /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		8A3FB64E178B29310002854B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB64F178B29310002854B /* PackageVersion.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A3FB650178B29310002854B /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB651178B29310002854B /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		8A3FB651178B29310002854B /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB652178B29310002854B /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A3FB646178B29310002854B /* libqmi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3FB657178B29310002854B /* Build configuration list for PBXNativeTarget "libqmi" */;
+			buildPhases = (
+				8A3FB643178B29310002854B /* Sources */,
+				8A3FB644178B29310002854B /* Frameworks */,
+				8A3FB645178B29310002854B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libqmi;
+			productName = libqmi;
+			productReference = 8A3FB647178B29310002854B /* libqmi */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A3FB63F178B29310002854B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 8A3FB642178B29310002854B /* Build configuration list for PBXProject "libqmi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A3FB63E178B29310002854B;
+			productRefGroup = 8A3FB648178B29310002854B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A3FB646178B29310002854B /* libqmi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A3FB645178B29310002854B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A3FB643178B29310002854B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3FB654178B29310002854B /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A3FB655178B29310002854B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		8A3FB656178B29310002854B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		8A3FB658178B29310002854B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		8A3FB659178B29310002854B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A3FB642178B29310002854B /* Build configuration list for PBXProject "libqmi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3FB655178B29310002854B /* Debug */,
+				8A3FB656178B29310002854B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3FB657178B29310002854B /* Build configuration list for PBXNativeTarget "libqmi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3FB658178B29310002854B /* Debug */,
+				8A3FB659178B29310002854B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A3FB63F178B29310002854B /* Project object */;
+}
