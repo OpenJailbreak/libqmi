@@ -7,16 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A3FB654178B29310002854B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB653178B29310002854B /* main.c */; };
+		8A3FB67C178B2BBD0002854B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3FB67B178B2BBD0002854B /* CoreFoundation.framework */; };
+		8A5CF3F018A408EB005B3304 /* sock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F1AF0179F468C00693F3A /* sock.cpp */; };
+		8A5CF3F118A408EB005B3304 /* sock.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F1AF1179F468C00693F3A /* sock.h */; };
+		8A5CF3F218A408EB005B3304 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB66E178B2B490002854B /* util.cpp */; };
+		8A5CF3F318A408EB005B3304 /* util.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB66F178B2B490002854B /* util.h */; };
+		8A5CF3F418A408EB005B3304 /* usb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB66C178B2B490002854B /* usb.cpp */; };
+		8A5CF3F518A408EB005B3304 /* usb.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB66D178B2B490002854B /* usb.h */; };
+		8A5CF3F618A408EB005B3304 /* bb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB65A178B2B490002854B /* bb.cpp */; };
+		8A5CF3F718A408EB005B3304 /* bb.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB65B178B2B490002854B /* bb.h */; };
+		8A5CF3F818A408EB005B3304 /* QMIClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB65C178B2B490002854B /* QMIClient.cpp */; };
+		8A5CF3F918A408EB005B3304 /* QMIClient.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB65D178B2B490002854B /* QMIClient.h */; };
+		8A5CF3FA18A408EB005B3304 /* QMIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB65E178B2B490002854B /* QMIController.cpp */; };
+		8A5CF3FB18A408EB005B3304 /* QMIController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB65F178B2B490002854B /* QMIController.h */; };
+		8A5CF3FC18A408EB005B3304 /* QMIControlPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB660178B2B490002854B /* QMIControlPacket.cpp */; };
+		8A5CF3FD18A408EB005B3304 /* QMIControlPacket.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB661178B2B490002854B /* QMIControlPacket.h */; };
+		8A5CF3FE18A408EB005B3304 /* QMIPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB662178B2B490002854B /* QMIPacket.cpp */; };
+		8A5CF3FF18A408EB005B3304 /* QMIPacket.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB663178B2B490002854B /* QMIPacket.h */; };
+		8A5CF40018A408EB005B3304 /* QMIService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB664178B2B490002854B /* QMIService.cpp */; };
+		8A5CF40118A408EB005B3304 /* QMIService.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB665178B2B490002854B /* QMIService.h */; };
+		8A5CF40218A408EB005B3304 /* QMISPIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB666178B2B490002854B /* QMISPIController.cpp */; };
+		8A5CF40318A408EB005B3304 /* QMILibController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB67F178DDE100002854B /* QMILibController.cpp */; };
+		8A5CF40418A408EB005B3304 /* QMILibController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB680178DDE100002854B /* QMILibController.h */; };
+		8A5CF40518A408EB005B3304 /* QMISPIController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB667178B2B490002854B /* QMISPIController.h */; };
+		8A5CF40618A408EB005B3304 /* QMIUSBController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB668178B2B490002854B /* QMIUSBController.cpp */; };
+		8A5CF40718A408EB005B3304 /* QMIUSBController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB669178B2B490002854B /* QMIUSBController.h */; };
+		8A5CF40818A408EB005B3304 /* TLV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB66A178B2B490002854B /* TLV.cpp */; };
+		8A5CF40918A408EB005B3304 /* TLV.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB66B178B2B490002854B /* TLV.h */; };
+		8A5CF40A18A408EB005B3304 /* diag.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F1AED179F45CF00693F3A /* diag.h */; };
+		8A5CF40B18A408EB005B3304 /* diag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A4DC9EF179F4484000A763E /* diag.cpp */; };
+		8A5CF40C18A408EB005B3304 /* etl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A4DC9F3179F4485000A763E /* etl.cpp */; };
+		8A5CF40D18A408EB005B3304 /* etl.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A4DC9F4179F4485000A763E /* etl.h */; };
+		8A5CF40E18A408EB005B3304 /* dload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A4DC9F0179F4484000A763E /* dload.cpp */; };
+		8A5CF40F18A408EB005B3304 /* dload.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A4DC9F1179F4484000A763E /* dload.h */; };
+		8A5CF41018A408EB005B3304 /* dbl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F1AEA179F45CF00693F3A /* dbl.cpp */; };
+		8A5CF41118A408EB005B3304 /* dbl.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F1AEB179F45CF00693F3A /* dbl.h */; };
+		8AF827C218A2E7740011994D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF827C118A2E7740011994D /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A3FB647178B29310002854B /* libqmi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libqmi; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3FB647178B29310002854B /* libqmi.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libqmi.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3FB64C178B29310002854B /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		8A3FB64D178B29310002854B /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		8A3FB64F178B29310002854B /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		8A3FB652178B29310002854B /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
-		8A3FB653178B29310002854B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8A3FB65A178B2B490002854B /* bb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bb.cpp; sourceTree = "<group>"; };
+		8A3FB65B178B2B490002854B /* bb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bb.h; sourceTree = "<group>"; };
+		8A3FB65C178B2B490002854B /* QMIClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QMIClient.cpp; sourceTree = "<group>"; };
+		8A3FB65D178B2B490002854B /* QMIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMIClient.h; sourceTree = "<group>"; };
+		8A3FB65E178B2B490002854B /* QMIController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QMIController.cpp; sourceTree = "<group>"; };
+		8A3FB65F178B2B490002854B /* QMIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMIController.h; sourceTree = "<group>"; };
+		8A3FB660178B2B490002854B /* QMIControlPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QMIControlPacket.cpp; sourceTree = "<group>"; };
+		8A3FB661178B2B490002854B /* QMIControlPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMIControlPacket.h; sourceTree = "<group>"; };
+		8A3FB662178B2B490002854B /* QMIPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QMIPacket.cpp; sourceTree = "<group>"; };
+		8A3FB663178B2B490002854B /* QMIPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMIPacket.h; sourceTree = "<group>"; };
+		8A3FB664178B2B490002854B /* QMIService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QMIService.cpp; sourceTree = "<group>"; };
+		8A3FB665178B2B490002854B /* QMIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMIService.h; sourceTree = "<group>"; };
+		8A3FB666178B2B490002854B /* QMISPIController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QMISPIController.cpp; sourceTree = "<group>"; };
+		8A3FB667178B2B490002854B /* QMISPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMISPIController.h; sourceTree = "<group>"; };
+		8A3FB668178B2B490002854B /* QMIUSBController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QMIUSBController.cpp; sourceTree = "<group>"; };
+		8A3FB669178B2B490002854B /* QMIUSBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMIUSBController.h; sourceTree = "<group>"; };
+		8A3FB66A178B2B490002854B /* TLV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TLV.cpp; sourceTree = "<group>"; };
+		8A3FB66B178B2B490002854B /* TLV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLV.h; sourceTree = "<group>"; };
+		8A3FB66C178B2B490002854B /* usb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usb.cpp; sourceTree = "<group>"; };
+		8A3FB66D178B2B490002854B /* usb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usb.h; sourceTree = "<group>"; };
+		8A3FB66E178B2B490002854B /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		8A3FB66F178B2B490002854B /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		8A3FB67B178B2BBD0002854B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8A3FB67F178DDE100002854B /* QMILibController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QMILibController.cpp; sourceTree = "<group>"; };
+		8A3FB680178DDE100002854B /* QMILibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMILibController.h; sourceTree = "<group>"; };
+		8A4DC9EF179F4484000A763E /* diag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = diag.cpp; sourceTree = "<group>"; };
+		8A4DC9F0179F4484000A763E /* dload.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dload.cpp; sourceTree = "<group>"; };
+		8A4DC9F1179F4484000A763E /* dload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dload.h; sourceTree = "<group>"; };
+		8A4DC9F3179F4485000A763E /* etl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = etl.cpp; sourceTree = "<group>"; };
+		8A4DC9F4179F4485000A763E /* etl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = etl.h; sourceTree = "<group>"; };
+		8A8F1AEA179F45CF00693F3A /* dbl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbl.cpp; sourceTree = "<group>"; };
+		8A8F1AEB179F45CF00693F3A /* dbl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbl.h; sourceTree = "<group>"; };
+		8A8F1AED179F45CF00693F3A /* diag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = diag.h; sourceTree = "<group>"; };
+		8A8F1AF0179F468C00693F3A /* sock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sock.cpp; sourceTree = "<group>"; };
+		8A8F1AF1179F468C00693F3A /* sock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sock.h; sourceTree = "<group>"; };
+		8AF827C118A2E7740011994D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,24 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF827C218A2E7740011994D /* IOKit.framework in Frameworks */,
+				8A3FB67C178B2BBD0002854B /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A10BFFB1791492E00B8DB02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AF827C118A2E7740011994D /* IOKit.framework */,
+				8A3FB67B178B2BBD0002854B /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A3FB63E178B29310002854B = {
 			isa = PBXGroup;
 			children = (
 				8A3FB649178B29310002854B /* libqmi */,
 				8A3FB648178B29310002854B /* Products */,
+				8A10BFFB1791492E00B8DB02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8A3FB648178B29310002854B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A3FB647178B29310002854B /* libqmi */,
+				8A3FB647178B29310002854B /* libqmi.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -49,7 +131,15 @@
 		8A3FB649178B29310002854B /* libqmi */ = {
 			isa = PBXGroup;
 			children = (
-				8A3FB653178B29310002854B /* main.c */,
+				8A8F1AF3179F468F00693F3A /* sock */,
+				8A8F1AE9179F451C00693F3A /* util */,
+				8A4DCA01179F44F7000A763E /* usb */,
+				8A4DCA00179F44D8000A763E /* bb */,
+				8A4DC9FF179F44D0000A763E /* qmi */,
+				8A4DC9FE179F44C3000A763E /* diag */,
+				8A4DC9FD179F44B8000A763E /* etl */,
+				8A4DC9FC179F44A4000A763E /* dload */,
+				8A4DC9FB179F4495000A763E /* dbl */,
 				8A3FB64A178B29310002854B /* Package */,
 				8A3FB64E178B29310002854B /* Supporting Files */,
 			);
@@ -98,6 +188,103 @@
 			name = bin;
 			sourceTree = "<group>";
 		};
+		8A4DC9FB179F4495000A763E /* dbl */ = {
+			isa = PBXGroup;
+			children = (
+				8A8F1AEA179F45CF00693F3A /* dbl.cpp */,
+				8A8F1AEB179F45CF00693F3A /* dbl.h */,
+			);
+			name = dbl;
+			sourceTree = "<group>";
+		};
+		8A4DC9FC179F44A4000A763E /* dload */ = {
+			isa = PBXGroup;
+			children = (
+				8A4DC9F0179F4484000A763E /* dload.cpp */,
+				8A4DC9F1179F4484000A763E /* dload.h */,
+			);
+			name = dload;
+			sourceTree = "<group>";
+		};
+		8A4DC9FD179F44B8000A763E /* etl */ = {
+			isa = PBXGroup;
+			children = (
+				8A4DC9F3179F4485000A763E /* etl.cpp */,
+				8A4DC9F4179F4485000A763E /* etl.h */,
+			);
+			name = etl;
+			sourceTree = "<group>";
+		};
+		8A4DC9FE179F44C3000A763E /* diag */ = {
+			isa = PBXGroup;
+			children = (
+				8A8F1AED179F45CF00693F3A /* diag.h */,
+				8A4DC9EF179F4484000A763E /* diag.cpp */,
+			);
+			name = diag;
+			sourceTree = "<group>";
+		};
+		8A4DC9FF179F44D0000A763E /* qmi */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB65C178B2B490002854B /* QMIClient.cpp */,
+				8A3FB65D178B2B490002854B /* QMIClient.h */,
+				8A3FB65E178B2B490002854B /* QMIController.cpp */,
+				8A3FB65F178B2B490002854B /* QMIController.h */,
+				8A3FB660178B2B490002854B /* QMIControlPacket.cpp */,
+				8A3FB661178B2B490002854B /* QMIControlPacket.h */,
+				8A3FB662178B2B490002854B /* QMIPacket.cpp */,
+				8A3FB663178B2B490002854B /* QMIPacket.h */,
+				8A3FB664178B2B490002854B /* QMIService.cpp */,
+				8A3FB665178B2B490002854B /* QMIService.h */,
+				8A3FB666178B2B490002854B /* QMISPIController.cpp */,
+				8A3FB67F178DDE100002854B /* QMILibController.cpp */,
+				8A3FB680178DDE100002854B /* QMILibController.h */,
+				8A3FB667178B2B490002854B /* QMISPIController.h */,
+				8A3FB668178B2B490002854B /* QMIUSBController.cpp */,
+				8A3FB669178B2B490002854B /* QMIUSBController.h */,
+				8A3FB66A178B2B490002854B /* TLV.cpp */,
+				8A3FB66B178B2B490002854B /* TLV.h */,
+			);
+			name = qmi;
+			sourceTree = "<group>";
+		};
+		8A4DCA00179F44D8000A763E /* bb */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB65A178B2B490002854B /* bb.cpp */,
+				8A3FB65B178B2B490002854B /* bb.h */,
+			);
+			name = bb;
+			sourceTree = "<group>";
+		};
+		8A4DCA01179F44F7000A763E /* usb */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB66C178B2B490002854B /* usb.cpp */,
+				8A3FB66D178B2B490002854B /* usb.h */,
+			);
+			name = usb;
+			sourceTree = "<group>";
+		};
+		8A8F1AE9179F451C00693F3A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				8A3FB66E178B2B490002854B /* util.cpp */,
+				8A3FB66F178B2B490002854B /* util.h */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		8A8F1AF3179F468F00693F3A /* sock */ = {
+			isa = PBXGroup;
+			children = (
+				8A8F1AF0179F468C00693F3A /* sock.cpp */,
+				8A8F1AF1179F468C00693F3A /* sock.h */,
+			);
+			name = sock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,7 +302,7 @@
 			);
 			name = libqmi;
 			productName = libqmi;
-			productReference = 8A3FB647178B29310002854B /* libqmi */;
+			productReference = 8A3FB647178B29310002854B /* libqmi.dylib */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -156,6 +343,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -164,7 +352,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A3FB654178B29310002854B /* main.c in Sources */,
+				8A5CF3F018A408EB005B3304 /* sock.cpp in Sources */,
+				8A5CF3F118A408EB005B3304 /* sock.h in Sources */,
+				8A5CF3F218A408EB005B3304 /* util.cpp in Sources */,
+				8A5CF3F318A408EB005B3304 /* util.h in Sources */,
+				8A5CF3F418A408EB005B3304 /* usb.cpp in Sources */,
+				8A5CF3F518A408EB005B3304 /* usb.h in Sources */,
+				8A5CF3F618A408EB005B3304 /* bb.cpp in Sources */,
+				8A5CF3F718A408EB005B3304 /* bb.h in Sources */,
+				8A5CF3F818A408EB005B3304 /* QMIClient.cpp in Sources */,
+				8A5CF3F918A408EB005B3304 /* QMIClient.h in Sources */,
+				8A5CF3FA18A408EB005B3304 /* QMIController.cpp in Sources */,
+				8A5CF3FB18A408EB005B3304 /* QMIController.h in Sources */,
+				8A5CF3FC18A408EB005B3304 /* QMIControlPacket.cpp in Sources */,
+				8A5CF3FD18A408EB005B3304 /* QMIControlPacket.h in Sources */,
+				8A5CF3FE18A408EB005B3304 /* QMIPacket.cpp in Sources */,
+				8A5CF3FF18A408EB005B3304 /* QMIPacket.h in Sources */,
+				8A5CF40018A408EB005B3304 /* QMIService.cpp in Sources */,
+				8A5CF40118A408EB005B3304 /* QMIService.h in Sources */,
+				8A5CF40218A408EB005B3304 /* QMISPIController.cpp in Sources */,
+				8A5CF40318A408EB005B3304 /* QMILibController.cpp in Sources */,
+				8A5CF40418A408EB005B3304 /* QMILibController.h in Sources */,
+				8A5CF40518A408EB005B3304 /* QMISPIController.h in Sources */,
+				8A5CF40618A408EB005B3304 /* QMIUSBController.cpp in Sources */,
+				8A5CF40718A408EB005B3304 /* QMIUSBController.h in Sources */,
+				8A5CF40818A408EB005B3304 /* TLV.cpp in Sources */,
+				8A5CF40918A408EB005B3304 /* TLV.h in Sources */,
+				8A5CF40A18A408EB005B3304 /* diag.h in Sources */,
+				8A5CF40B18A408EB005B3304 /* diag.cpp in Sources */,
+				8A5CF40C18A408EB005B3304 /* etl.cpp in Sources */,
+				8A5CF40D18A408EB005B3304 /* etl.h in Sources */,
+				8A5CF40E18A408EB005B3304 /* dload.cpp in Sources */,
+				8A5CF40F18A408EB005B3304 /* dload.h in Sources */,
+				8A5CF41018A408EB005B3304 /* dbl.cpp in Sources */,
+				8A5CF41118A408EB005B3304 /* dbl.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +397,8 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_SUFFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(iOSOpenDevPath)/frameworks/**",
 					"$(SDKROOT)/System/Library/PrivateFrameworks",
@@ -192,8 +415,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				MACH_O_TYPE = mh_dylib;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -207,6 +431,8 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_SUFFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(iOSOpenDevPath)/frameworks/**",
 					"$(SDKROOT)/System/Library/PrivateFrameworks",
@@ -216,8 +442,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				MACH_O_TYPE = mh_dylib;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -228,15 +455,19 @@
 		8A3FB658178B29310002854B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				INSTALL_PATH = /usr/bin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_SUFFIX = "";
+				INSTALL_PATH = /usr/lib;
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME).dylib";
+				PROVISIONING_PROFILE = "";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = iphone;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
-				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevRespringOnInstall = NO;
 				iOSOpenDevUsePackageVersionPList = YES;
 			};
 			name = Debug;
@@ -244,15 +475,19 @@
 		8A3FB659178B29310002854B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				INSTALL_PATH = /usr/bin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_SUFFIX = "";
+				INSTALL_PATH = /usr/lib;
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME).dylib";
+				PROVISIONING_PROFILE = "";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = iphone;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
-				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevRespringOnInstall = NO;
 				iOSOpenDevUsePackageVersionPList = YES;
 			};
 			name = Release;
@@ -276,6 +511,7 @@
 				8A3FB659178B29310002854B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
