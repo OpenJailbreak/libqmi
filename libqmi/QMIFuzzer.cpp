@@ -64,6 +64,7 @@
 // the QMI::Packet object is the message object to be sent from the high level QMI::Service class down to the low level
 // QMI::Controller classes for transmission to the baseband.
 
+#include <cstdio>
 #include <cstdlib>
 #include <iostream>
 #include <mach/mach.h>
